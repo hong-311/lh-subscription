@@ -1,0 +1,175 @@
+.title_box {
+    padding: 120px 0 40px ;
+    background-color: #4949d4;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    margin-top: -5rem;
+}
+.title_box .title{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;    
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+.inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+}
+#wrap .content_box {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    padding-bottom: 35px;
+}
+
+#wrap .content_box .left {
+    width: 35%;
+    border-radius: 20px;
+}
+#wrap .content_box .news-txt {
+    width: 65%;
+}
+
+#wrap .content_box  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+#wrap .content_box .date {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #4747d4;
+    font-weight: 300;
+}
+
+#wrap .content_box .content {
+    padding-top: 1;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #949cab;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+#wrap .content_box .news-img {
+    width: 100%; /* 너비를 100%로 설정 */
+    height: 200px; /* 원하는 고정 높이 설정 */
+    object-fit: cover; /* 비율 유지하며 지정된 높이에 맞게 잘림 */
+}
+#wrap .content_box .news-link {
+    font-size: 18px;
+    padding: 10px 25px;
+    line-height: 1.3;
+    background-color: #e7e7e7;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 600;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.pagination {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    color: #808080;
+    font-size: 18px;
+    font-weight: 500;
+}
+.pagination .arrow {
+    background-color: unset;
+    color: unset;
+}
+.pagination .current {
+    color: #4949d4;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+.top_button_wrap {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 998;
+}
+.top_button {
+    display: inline-block;
+    text-align: right;
+}
+.top_button img{
+    width: 60%;
+}
+@media screen and (max-width: 767px) {
+    .title_box {
+        padding: 60px 0 25px !important;
+        margin-top: -4rem;
+    }
+    .title_box .title {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .inner {
+        width: 90%;
+        max-width: 100%;
+        padding-bottom: 80px;
+    }
+    #wrap .content_box .news-link {
+        font-size: 18px;
+        padding: 5px 20px;
+        line-height: 1.3;
+        background-color: #e7e7e7;
+        border-radius: 30px;
+        display: inline-flex;
+        align-items: center;
+        gap: 25px;
+        font-weight: 600;
+        margin-top: 15px;
+    }
+    #wrap .content_box {
+        display: flex;
+        align-items: stretch;
+        gap: 20px;
+        flex-direction: column;
+    }
+    #wrap .content_box .left {
+        width: 100%;
+        border-radius: 20px;
+    }
+    #wrap .content_box .news-txt {
+        width: 100%;
+    }
+    .top_button img{
+        width: 40%;
+    }
+}

@@ -1,0 +1,229 @@
+.content1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 80px;
+}
+.title_box {
+    padding: 120px 0 40px ;
+    background-color: #4949d4;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    margin-top: -5rem;
+}
+.title_box .title{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;    
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+.search-container {
+    position: relative;
+    display: flex;
+    width: 100%; /* 검색창 길이 조정 */
+    margin: 50px auto;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    width: 100%; /* 폼의 전체 너비를 100%로 설정 */
+}
+
+.search-input {
+    padding: 8px 40px 8px 32px; 
+    border: 3px solid #2f6ad3; 
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+    width: 100%; /* 입력창을 100%로 설정 */
+    flex: 1; /* 입력창이 가변적으로 늘어나도록 설정 */
+}
+
+.search-icon {
+    position: absolute; 
+    left: 10px; /* 돋보기 위치 조정 */
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 20px;
+    height: 20px;
+}
+
+.search-button {
+    padding: 8px 15px; 
+    border: none;
+    background-color: #2f6ad3;
+    color: white; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.search-button img{
+    width: 50%;
+}
+
+.search-button:hover {
+}
+.result_box {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 400px; 
+    flex-direction: column;
+    gap: 30px;
+}
+.result_box img{
+    width: 10%;
+}
+.result_box .no-results {
+    text-align: center; 
+    font-size: 18px; 
+    color: #7a7a7a; 
+}
+
+.qna .q{ 
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid #c7c7c7;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 1.3;
+    padding-right: 3rem;
+    background-color: #e7e7e7;
+}
+.qna .q span{ 
+    font-size: 18px;
+    font-weight: 600;
+    color: #2f6ad3;
+}
+.qna.first .q { 
+    border-top: 2px solid #c7c7c7; /* 첫 번째 항목의 질문에만 스타일 적용 */
+}
+
+.qna:last-child .q{ 
+    border-bottom: 2px solid #c7c7c7;
+}
+.qna  img{ 
+    width: 3%;
+    margin-right: 10px;
+}
+
+.qna .q::after{ 
+    content: '';
+    background-image: url('../img/arrow-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 1rem;
+    top: 55%;
+    transform: translateY(-50%);
+
+}
+.qna.on .q::after{ 
+    background-image: url('../img/arrow-2.png');
+}
+
+.qna.on .a { 
+    font-size: 18px;
+    display: block;
+    padding: 1rem;
+    align-items: flex-start;
+    display: flex;
+}
+.qna .a { 
+    display: none;
+    line-height: 1.5;
+    border-bottom:2px solid #c7c7c7;
+}
+.top_button_wrap {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 998;
+}
+.top_button {
+    display: inline-block;
+    text-align: right;
+}
+.top_button img{
+    width: 60%;
+}
+.pagination {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    color: #808080;
+    font-size: 18px;
+    font-weight: 500;
+}
+.pagination .arrow {
+    background-color: unset;
+    color: unset;
+}
+.pagination .current {
+    color: #4949d4;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .title_box {
+        padding: 60px 0 25px !important;
+        margin-top: -4rem;
+    }
+    .title_box .title {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .content1 {
+        width: 90%;
+        max-width: 100%;
+    }
+    .search-container {
+        position: relative;
+        display: flex;
+        width: 99%;
+        margin: 40px auto;
+        justify-content: center;
+    }
+    .search-input {
+        font-size: 16px;
+    }
+    .search-button {
+        font-size: 16px;
+    }
+    .qna img {
+        width: 8%;
+        margin-right: 10px;
+    }
+    .qna .q {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .pagination {
+        margin-top: 40px;
+    }
+    .top_button img{
+        width: 40%;
+    }
+}

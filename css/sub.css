@@ -1,0 +1,354 @@
+.title_box {
+    padding: 120px 0 40px ;
+    background-color: #4949d4;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    margin-top: -5rem;
+}
+.title_box .title{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;    
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+.content1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 80px;
+}
+.section_A .box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.section_A .box .sub_title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.section_B .box, .section_C .box{
+    margin-bottom: 30px;
+    display: block;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 15px;
+}
+.section_B .box .sub_title {
+    color: #fff; /* 텍스트 색상 조정 (필요시) */
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    font-weight: 500 !important;
+}
+.section_B .box:nth-child(odd) .sub_title {
+    background-color: #4949d4; /* 홀수 */
+}
+
+.section_B .box:nth-child(even) .sub_title {
+    background-color: #33c9a6; /* 짝수 */
+}
+.section_C .box .sub_title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.box .con{
+    font-size: 18px;
+    line-height: 1.3;
+    color: #808080;
+}
+.box .con .point3{
+    font-size: 18px;
+    color: #808080;
+    font-weight: 600;
+}
+.sub_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.banner {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.image_wrap {
+    flex: 1;
+    position: relative;
+    flex-grow: 1;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.section_A1-1 .banner,
+.section_A1-2 .banner,
+.section_A1-3 .banner,
+.section_A1-4 .banner,
+.section_A1-5 .banner,
+.section_A1-6 .banner,
+.section_A1-7 .banner,
+.section_A1-8 .banner,
+.section_A1-9 .banner,
+.section_A1-10 .banner {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.section_A1-1 .title_box,
+.section_A1-2 .title_box,
+.section_A1-3 .title_box,
+.section_A1-4 .title_box,
+.section_A1-5 .title_box,
+.section_A1-6 .title_box,
+.section_A1-7 .title_box,
+.section_A1-8 .title_box,
+.section_A1-9 .title_box,
+.section_A1-10 .title_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev_btn {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50px;
+}
+
+.next_btn {
+    right: -50px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navigation {
+    flex-shrink: 0;
+}
+
+.navigation img{
+    width: 45%;
+}
+.btn_wrap1 {
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.btn_wrap2 {
+    text-align: center;
+    width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+.btn_wrap1 .next {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin: 40px 0;
+    font-size: 16px;
+    border-top: 2px solid #a9a9a9;
+    border-bottom: 2px solid #a9a9a9;
+}
+.btn_wrap2 .next {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #fff;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    font-size: 16px;
+    border-bottom: 2px solid #a9a9a9;
+}
+.btn_wrap1 .back5 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    color: #fff;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin: 40px 0;
+    font-size: 16px;
+    border-top: 2px solid #a9a9a9;
+    border-bottom: 2px solid #a9a9a9;
+}
+.btn_wrap2 .back5 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e7e7e7;
+    color: #fff;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    font-size: 16px;
+    border-top: 2px solid #a9a9a9;
+    border-bottom: 2px solid #a9a9a9;
+}
+
+.next .btn_left .s1, .back5 .btn_left .s1{
+    padding-right: 15px;
+    font-weight: 600;
+}
+
+.btn_left {
+    display: flex;
+    align-items: center;
+}
+.s1, .s2 {
+    font-size: 18px;
+    line-height: 1.3;
+}
+.s1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #5353d5;
+
+}
+.s2 {
+    color: #767676;
+    font-weight: 600;
+
+}
+.s1 img {
+    width: 25%;
+}
+.top_button_wrap {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+.top_button {
+    display: inline-block;
+    text-align: right;
+}
+.top_button img{
+    width: 60%;
+}.title_box {
+    width: 100%;
+    position: relative;
+}
+/* 스와이퍼 스타일 */
+.swiper-container {
+    max-width: 1200px;
+    width: 100%;
+    height: 400px; /* 원하는 높이 설정 */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.swiper-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.slide_btn {
+    display: block;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 비율을 유지하며 영역을 채움 */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff; /* 화살표 색상 */
+}
+
+/* 추가적인 스타일 */
+.swiper-pagination {
+    bottom: 10px; /* 페이지네이션 위치 조정 */
+}
+@media screen and (max-width: 767px) {
+    .title_box {
+        padding: 60px 0 25px !important;
+        margin-top: -4rem;
+    }
+    .title_box .title {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .content1 {
+        width: 90%;
+        max-width: 100%;
+        margin: 30px auto 80px;
+    }
+    .section_A .box {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .section_A .box .left {
+        width: 35%;
+    }
+    .section_A .box .right {
+        width: 60%;
+    }
+    .section_A .box .left img{
+        width: 100%;
+    }
+    .section_A1-1 .banner, .section_A1-2 .banner, .section_A1-3 .banner, .section_A1-4 .banner, .section_A1-5 .banner, .section_A1-6 .banner, .section_A1-7 .banner, .section_A1-8 .banner, .section_A1-9 .banner, .section_A1-10 .banner {
+        width: 90%;
+        margin-bottom: 0;
+        margin: 0 auto;
+    }
+    .navigation img {
+        width: 25%;
+    }
+    .next_btn {
+        right: 5px;
+        text-align: right;
+    }
+    .prev_btn {
+        left: -35px;
+    }
+    .top_button img{
+        width: 40%;
+    }
+    .btn_wrap1 {
+        width: 100%;
+    }
+    .btn_wrap2 {
+        width: 100%;
+    }
+    .s1, .s2 {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+}
